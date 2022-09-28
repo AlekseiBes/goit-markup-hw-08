@@ -20,11 +20,18 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header__section">
-        <nav class="header__nav">
-          <a href="./index.html" class="header__logo" lang="en">
+      <div class="container header__section header__container">
+        <div class="header__logo">
+          <a href="./index.html" class="header__logo_blue" lang="en">
             Web<span class="header__logo_black">Studio</span></a
           >
+        </div>
+        <button type="button" class="mobile-button-open toggleMenu">
+          <svg class="mobile-burger-icon">
+            <use href="./images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+        <nav class="header__nav">
           <ul class="nav list">
             <li><a href="./index.html" class="nav__link nav__link_current">Студія</a></li>
             <li><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
@@ -49,31 +56,58 @@
             </a>
           </li>
         </ul>
-        <!-- Мобільне меню -->
+      </div>
+      <!-- Мобільне меню -->
 
-        <button type="button" class="mobile-button-open js-open-menu">
-          <svg class="mobile-burger-icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-menu_24px"></use>
-          </svg>
-        </button>
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu__container">
+          <div class="mobile-menu__window">
+            <button class="mobile-menu__button js-close-menu" >
+              <svg aria-label="" class="mobile-menu__icon">
+                <use href="./images/icons.svg#mobile-icon-close"></use>
+              </svg>
+            </button>
 
-        <div class="mobile-container js-menu-container">
-          <button type="button" class="mobile-button-close js-close-menu">
-            <svg aria-label="" width="18" height="18" class="mobile-close-icon">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <ul class="mobile-list">
-            <li><a href="" class="link">About</a></li>
-            <li><a href="" class="link">Products</a></li>
-            <li><a href="" class="link">Contacts</a></li>
-            <li><a href="" class="link">Career</a></li>
-            <li><a href="" class="link">Career</a></li>
-          </ul>
+            <ul class="mobile-menu__list list">
+              <li class="mobile-menu__items">
+                <a href="" class="mobile-menu__link mobile-current">Студія</a>
+              </li>
+              <li class="mobile-menu__items"><a href="" class="mobile-menu__link">Портфоліо</a></li>
+              <li class=""><a href="" class="mobile-menu__link">Контакти</a></li>
+            </ul>
+          </div>
+
+          <div class="">
+            <ul class="list">
+              <li>
+                <a href="tel:+380961111111" class="mobile-menu__phone"> +38 096 111 11 11 </a>
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mobile-menu__email">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__social дшые">
+              <li class="mobile-menu__network"><a href=""></a>Instagram</li>
+              <li class="mobile-menu__network"><a href=""></a>Twitter</li>
+              <li class="mobile-menu__network"><a href=""></a>Facebook</li>
+              <li class="mobile-menu__network"><a href=""></a>LinkedIn</li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
     <main>
+
+
+      <!-- 
+ -->
+
+      <!--  -->
+
+      <!--  -->
+
       <!-- Герой -->
 
       <!-- <section class="hero section">
@@ -535,6 +569,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
