@@ -347,6 +347,7 @@ img {
   z-index: 100;
   width: 100%;
   height: 100%;
+  background-color: var(--primari-buckground-color);
   padding: 48px 40px;
   opacity: 0;
   visibility: hidden;
@@ -472,15 +473,13 @@ img {
 }
 
 .mobile-button-open {
+  margin: 0;
   padding: 0;
   line-height: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
   outline: none;
-}
-.mobile-button-open.is-open {
-  display: block;
 }
 
 .mobile-burger-icon {

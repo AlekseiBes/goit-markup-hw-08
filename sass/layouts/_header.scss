@@ -15,16 +15,13 @@
 }
 
 .mobile-button-open {
+  margin: 0;
   padding: 0;
   line-height: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
   outline: none;
-
-  &.is-open {
-    display: block;
-  }
 }
 
 .mobile-burger-icon {
