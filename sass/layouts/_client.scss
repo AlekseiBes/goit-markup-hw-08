@@ -1,0 +1,40 @@
+.client {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.client__title {
+  color: var(--third-font-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.client-fon {
+  fill: rgba(175, 177, 184, 1);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  transition: border var(--animation), fill var(--animation);
+  
+  &:hover,
+  &:focus {
+    fill: rgba(33, 150, 243, 1);
+    border: 1px solid rgba(33, 150, 243, 1);
+    border-radius: 4px;
+  }
+}
+
+

@@ -1,0 +1,45 @@
+.advantage {
+  display: flex;
+  column-gap: 30px;
+}
+
+.advantage__list {
+  display: flex;
+}
+
+.advantage__fon:not(:last-child) {
+  margin-right: 30px;
+  max-width: 270px;
+}
+
+.advantage__card {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  background-color: var(--buckground-color-1);
+}
+
+.advantage__icon {
+  align-items: center;
+}
+
+.advantage__title {
+  text-transform: uppercase;
+  color: var(--third-font-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  max-width: 270px;
+
+  margin-bottom: 10px;
+}
+
+.advantage__text {
+  line-height: 1.7;
+  max-width: 270px;
+}

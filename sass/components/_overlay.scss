@@ -1,0 +1,28 @@
+.portfolio-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--primari-buckground-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  line-height: 1.55;
+
+  padding: 63px 24px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform var(--animation);
+  
+  .portfolio-link:hover &,
+  .portfolio-link:focus & {
+    transform: translateY(0%);
+  }
+}
