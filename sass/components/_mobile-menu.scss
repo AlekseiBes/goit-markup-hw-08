@@ -16,7 +16,7 @@
   transition: opacity var(--animation), visibility var(--animation);
 }
 
-.mobile-menu .is-open {
+.mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -40,8 +40,8 @@
 
 .mobile-menu__button {
   position: absolute;
-  top: 25px;
-  right: 15px;
+  top: -33px;
+  right: -25px;
   background-color: transparent;
   border: 0;
   padding: 0;
