@@ -62,7 +62,7 @@
       <div class="mobile-menu js-menu-container">
         <div class="mobile-menu__container">
           <div class="mobile-menu__window">
-            <button class="mobile-menu__button js-close-menu" >
+            <button class="mobile-menu__button js-close-menu">
               <svg aria-label="" class="mobile-menu__icon">
                 <use href="./images/icons.svg#mobile-icon-close"></use>
               </svg>
@@ -88,7 +88,7 @@
                 </a>
               </li>
             </ul>
-            <ul class="mobile-menu__social list" >
+            <ul class="mobile-menu__social list">
               <li class="mobile-menu__network"><a href=""></a>Instagram</li>
               <li class="mobile-menu__network"><a href=""></a>Twitter</li>
               <li class="mobile-menu__network"><a href=""></a>Facebook</li>
@@ -99,7 +99,6 @@
       </div>
     </header>
     <main>
-
       <!-- Герой -->
 
       <section class="hero section">
@@ -193,39 +192,72 @@
 
       <!-- Команда -->
 
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__img">
-              <img src="./images/img_team_1.jpg" width="270" alt="Портрет Ігора Дем'яненко" />
+              <picture>
+                <source
+                  srcset="./images/team_d1.webp 1x, ./images/team_d1@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team_d1.jpg 1x, ./images/team_d1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/img_t1.webp 1x, ./images/img_t1@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img_t1.jpg 1x, ./images/img_t1@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/igor.webp 1x, ./images/igor@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+
+                <img src="./images/team_d1.jpg" alt="Портрет Ігора Дем'яненко" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__worker">Ігор Дем'яненко</h3>
                 <p class="team__profession" lang="en">Product Designer</p>
                 <ul class="list team__social">
-                  <li>
-                    <a href="" class="team__social-fon">
+                  <li class="team__item">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -235,34 +267,66 @@
               </div>
             </li>
             <li class="team__img">
-              <img src="./images/img_team_2.jpg" width="270" alt="Портрет Ольги Рєпіної" />
+              <picture>
+                <source
+                  srcset="./images/team_d2.webp 1x, ./images/team_d2@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team_d2.jpg 1x, ./images/team_d2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/img_t2.webp 1x, ./images/img_t2@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img_t2.jpg 1x, ./images/img_t2@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/olga.webp 1x, ./images/olga@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+
+                <img src="./images/team_d1.jpg" alt="Портрет Ольги Рєпіної" />
+              </picture>
               <div class="team__box">
                 <h3 class="team__worker">Ольга Рєпіна</h3>
                 <p class="team__profession" lang="en">Frontend Developer</p>
                 <ul class="list team__social">
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -272,34 +336,66 @@
               </div>
             </li>
             <li class="team__img">
-              <img src="./images/img_team_3.jpg" width="270" alt="Портрет Миколи Тарасова" />
+              <picture>
+                <source
+                  srcset="./images/team_d3.webp 1x, ./images/team_d3@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team_d3.jpg 1x, ./images/team_d3@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/img_t3.webp 1x, ./images/img_t3@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img_t3.jpg 1x, ./images/img_t3@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/mikola.webp 1x, ./images/mikola@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/mikola.jpg 1x, ./images/mikola@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+
+                <img src="./images/team_d3.jpg" alt="Портрет Миколи Тарасова" />
+              </picture>
               <div class="team__box">
                 <h3 class="team__worker">Микола Тарасов</h3>
                 <p class="team__profession" lang="en">Marketing</p>
                 <ul class="list team__social">
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -309,34 +405,66 @@
               </div>
             </li>
             <li class="team__img">
-              <img src="./images/img_team_4.jpg" width="270" alt="Портрет Михайла Єрмакова" />
+              <picture>
+                <source
+                  srcset="./images/team_d1.webp 1x, ./images/team_d1@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team_d1.jpg 1x, ./images/team_d1@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/img_t1.webp 1x, ./images/img_t1@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img_t1.jpg 1x, ./images/img_t1@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/igor.webp 1x, ./images/igor@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/igor.jpg 1x, ./images/igor@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+
+                <img src="./images/team_d1.jpg" alt="Портрет Михайла Єрмакова" />
+              </picture>
               <div class="team__box">
                 <h3 class="team__worker">Михайло Єрмаков</h3>
                 <p class="team__profession" lang="en">UI Designer</p>
                 <ul class="list team__social">
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="" class="team__social-fon">
+                    <a href="" class="team__social_fon">
                       <svg class="team__social-icon" aria-label="" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -347,7 +475,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Кліенти -->
 
@@ -562,6 +690,6 @@
       </div>
     </div>
     <script src="./js/mobile-menu.js"></script>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>

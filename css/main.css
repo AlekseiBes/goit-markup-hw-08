@@ -800,25 +800,22 @@ img {
 .team__title {
   color: var(--third-font-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.team__list {
-  display: flex;
-  column-gap: 30px;
-}
-
-.team__img {
-  background-color: var(--primari-buckground-color);
-  max-width: 270px;
+  font-size: 28px;
+  line-height: 1.78;
+  margin-bottom: 30px;
   text-align: center;
 }
 
 .team__box {
-  padding: 30px 0px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
+}
+
+.team__img {
+  background-color: var(--primari-buckground-color);
+  max-width: 450px;
+  text-align: center;
 }
 
 .team__worker {
@@ -826,6 +823,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  padding-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -837,14 +835,15 @@ img {
 }
 
 .team__social {
+  display: flex;
+  justify-content: center;
   padding: 0;
   margin: 0;
-  display: flex;
   column-gap: 10px;
-  justify-content: center;
+  padding-bottom: 24px;
 }
 
-.team__social-fon {
+.team__social_fon {
   fill: rgb(175, 177, 184);
   width: 44px;
   height: 44px;
@@ -854,7 +853,7 @@ img {
   justify-content: center;
   transition: background-color var(--animation), fill var(--animation);
 }
-.team__social-fon:hover, .team__social-fon:focus {
+.team__social_fon:hover, .team__social_fon:focus {
   background-color: rgb(33, 150, 243);
   fill: rgb(255, 255, 255);
 }
