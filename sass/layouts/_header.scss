@@ -6,34 +6,32 @@
   .contact {
     display: none;
   }
-}
 
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  .header__logo {
+    display: flex;
+    align-items: center;
+  }
 
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  .mobile-button-open {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
 
-.header__logo {
-  display: flex;
-  align-items: center;
-}
-
-.mobile-button-open {
-  margin: 0;
-  padding: 0;
-  line-height: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  outline: none;
-}
-
-.mobile-burger-icon {
-  width: 40px;
-  height: 40px;
+  .mobile-burger-icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -84,33 +82,53 @@
   .nav__link_current {
     color: var(--secondary-font-color);
     position: relative;
-  
-  &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--secondary-font-color);
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    border-radius: 2px;
-  }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: var(--secondary-font-color);
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      border-radius: 2px;
+    }
   }
 
   .contact {
-    display: block;
+
     margin-left: auto;
   }
 
   .contact__link {
-    display: block;
+    display: flex;
     color: var(--contact-color);
     font-weight: 500;
     font-size: 12px;
     line-height: 1.16;
 
-    margin-bottom: 10px;
+    padding-top: 21px;
+    padding-bottom: 5px;
+
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+      color: var(--secondary-font-color);
+    }
+  }
+
+  .contact__link_tel {
+    display: flex;
+
+    color: var(--contact-color);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+
+    padding-bottom: 21px;
+    padding-top: 5px;
 
     transition: color var(--animation);
 
@@ -126,4 +144,35 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-left: 93px;
+    gap: 50px;
+  }
 
+  .contact {
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+  }
+
+  .contact__link {
+    display: inline-flex;
+    padding: 32px 0px 32px;
+    align-items: center;
+    line-height: 1.14;
+    font-size: 16px;
+  }
+
+  .contact__link_tel {
+    display: inline-flex;
+    padding: 32px 0px 32px;
+    align-items: center;
+    line-height: 1.14;
+    font-size: 16px;
+  }
+
+  .contact__icon {
+    margin-right: 10px;
+  }
+}
