@@ -1,15 +1,30 @@
 .header__logo_blue {
-    color: var(--secondary-font-color);
-    font-family: 'Raleway', 'sans-serif';
-    font-weight: 700;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: var(--secondary-font-color);
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+}
+
+.header__logo_black {
+  color: var(--font-color-logo-2);
+}
+
+.header__logo_white {
+  color: var(--primari-buckground-color);
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo_blue {
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo_blue {
     font-size: 26px;
     line-height: 1.19;
   }
-  
-  .header__logo_black {
-    color: var(--font-color-logo-2);
-  }
-  
-  .header__logo_white {
-    color: var(--primari-buckground-color);
-  }
+}
