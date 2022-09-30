@@ -26,6 +26,13 @@
     background-color: transparent;
     cursor: pointer;
     outline: none;
+
+    transition: fill var(--animation);
+  
+    &:hover,
+    &:focus {
+      fill: var(--secondary-font-color);
+    }
   }
 
   .mobile-burger-icon {

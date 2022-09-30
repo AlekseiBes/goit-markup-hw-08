@@ -1,6 +1,5 @@
 .header__logo_blue {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 0px;
   color: var(--secondary-font-color);
   font-family: 'Raleway', 'sans-serif';
   font-weight: 700;
@@ -10,10 +9,19 @@
 
 .header__logo_black {
   color: var(--font-color-logo-2);
+
 }
 
 .footer__logo_white {
   color: var(--primari-buckground-color);
+}
+
+.footer__logo_blue {
+  color: var(--secondary-font-color);
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
 }
 
 @media screen and (min-width: 768px) {
