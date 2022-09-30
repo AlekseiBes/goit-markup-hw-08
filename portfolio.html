@@ -69,9 +69,9 @@
 
             <ul class="mobile-menu__list list">
               <li class="mobile-menu__items">
-                <a href="" class="mobile-menu__link mobile-current">Студія</a>
+                <a href="" class="mobile-menu__link">Студія</a>
               </li>
-              <li class="mobile-menu__items"><a href="" class="mobile-menu__link">Портфоліо</a></li>
+              <li class="mobile-menu__items"><a href="" class="mobile-menu__link ">Портфоліо</a></li>
               <li class=""><a href="" class="mobile-menu__link">Контакти</a></li>
             </ul>
           </div>
@@ -289,83 +289,83 @@
 
     <footer class="footer-page">
       <div class="container footer-block">
-        <div class="footer__logo">
-          <a href="./index.html" class="footer__logo_blue" lang="en">
-            Web<span class="footer__logo_white">Studio</span></a
-          >
-        </div>
-        <!-- Футер контакти -->
+        <div class="footer__tablet">
+          <div class="footer__logo_contact">
+            <a href="./index.html" class="footer__logo_blue" lang="en">
+              Web<span class="footer__logo_white">Studio</span></a
+            >
+            <address class="">
+              <ul class="footer__item list">
+                <li class="footer__bottom footer__top">
+                  <a href="https://goo.gl/maps/ReowiNLjcF3ipeQF8" class="footer__address link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__bottom">
+                  <a href="mailto:info@devstudio.com" class="footer__contact link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+380961111111" class="footer__contact link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
 
-        <address class="">
-          <ul class="footer__item list">
-            <li class="footer__bottom footer__top">
-              <a href="https://goo.gl/maps/ReowiNLjcF3ipeQF8" class="footer__address link"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="footer__bottom">
-              <a href="mailto:info@devstudio.com" class="footer__contact link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+380961111111" class="footer__contact link">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+          <!-- Футер соцмережі -->
 
-        <!-- Футер соцмережі -->
-
-        <div class="footer__social">
-          <p class="footer__text">Приєднуйтесь</p>
-          <ul class="list footer__icon_item">
-            <li>
-              <a href="" class="footer__icon_color">
-                <svg class="footer__icon" aria-label="" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__icon_color">
-                <svg class="footer__icon" aria-label="" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__icon_color">
-                <svg class="footer__icon" aria-label="" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__icon_color">
-                <svg class="footer__icon" aria-label="" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="footer__social">
+            <p class="footer__text">Приєднуйтесь</p>
+            <ul class="list footer__icon_item">
+              <li>
+                <a href="" class="footer__icon_color">
+                  <svg class="footer__icon" aria-label="" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="footer__icon_color">
+                  <svg class="footer__icon" aria-label="" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="footer__icon_color">
+                  <svg class="footer__icon" aria-label="" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="footer__icon_color">
+                  <svg class="footer__icon" aria-label="" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- Форма -->
 
         <div class="footer__form">
           <p class="footer__text">Підпишіться на розсилку</p>
-          <form class="footer-email-form">
-            <label class="email-form-field">
+          <form class="footer__email_form">
+            <label class="footer__email_field">
               <input
                 type="email"
                 name="email"
-                class="email-form-input"
+                class="footer__email_input"
                 placeholder="E-mail"
                 required
             /></label>
             <button type="submit" class="footer__button">
               Підписатися
-              <svg class="footer-btn-icon" width="24" height="24">
+              <svg class="footer__btn_icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
