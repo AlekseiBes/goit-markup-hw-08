@@ -64,6 +64,7 @@
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
+    transition: color var(--animation);
   
     &:hover,
     &:focus {
@@ -83,6 +84,13 @@
     line-height: 1.16;
   
     margin-bottom: 64px;
+
+    transition: color var(--animation);
+  
+    &:hover,
+    &:focus {
+      color: var(--secondary-font-color);
+    }
   }
   
   .mobile-menu__phone {
