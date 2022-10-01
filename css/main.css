@@ -167,7 +167,7 @@ img {
 }
 
 .modal {
-  width: 450px;
+  max-width: 450px;
   min-height: 609px;
   padding: 40px;
   background-color: var(--primari-buckground-color);
@@ -460,7 +460,7 @@ img {
     display: block;
     color: var(--secondary-font-color);
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.17;
     margin-bottom: 32px;
   }
@@ -474,8 +474,8 @@ img {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
   .mobile-menu__network:last-child {
@@ -484,6 +484,16 @@ img {
   }
   .mobile-menu__network:first-child {
     padding-left: 0%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu__phone {
+    font-size: 34px;
+  }
+  .mobile-menu__network {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -571,6 +581,11 @@ img {
     border-radius: 2px;
   }
   .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    margin-left: auto;
     margin-left: auto;
   }
   .contact__link {
@@ -579,24 +594,9 @@ img {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.16;
-    padding-top: 21px;
-    padding-bottom: 5px;
     transition: color var(--animation);
   }
   .contact__link:hover, .contact__link:focus {
-    color: var(--secondary-font-color);
-  }
-  .contact__link_tel {
-    display: flex;
-    color: var(--contact-color);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.16;
-    padding-bottom: 21px;
-    padding-top: 5px;
-    transition: color var(--animation);
-  }
-  .contact__link_tel:hover, .contact__link_tel:focus {
     color: var(--secondary-font-color);
   }
   .contact__icon {
@@ -724,7 +724,7 @@ img {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--buckground-color-1);
@@ -927,6 +927,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
   flex-basis: calc((100% - 30px) / 2);
 }
 
@@ -1148,6 +1149,12 @@ img {
     justify-content: space-around;
     align-items: baseline;
   }
+  .footer__social {
+    padding: 0px;
+  }
+  .footer__text {
+    margin-top: 60px;
+  }
   .footer__email_input {
     width: 450px;
     margin-left: auto;
@@ -1164,6 +1171,9 @@ img {
   }
   .footer__item {
     display: block;
+  }
+  .footer__text {
+    margin-top: 0px;
   }
   .footer__social {
     display: block;

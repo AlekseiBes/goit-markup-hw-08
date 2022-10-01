@@ -175,6 +175,14 @@
     align-items: baseline;
   }
 
+  .footer__social {
+    padding: 0px;
+  }
+
+  .footer__text {
+    margin-top: 60px;
+  }
+
   .footer__email_input {
     width: 450px;
     margin-left: auto;
@@ -194,6 +202,10 @@
 
   .footer__item {
     display: block;
+  }
+
+  .footer__text {
+    margin-top: 0px;
   }
 
   .footer__social {
