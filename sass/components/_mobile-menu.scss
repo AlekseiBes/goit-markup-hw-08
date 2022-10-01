@@ -7,22 +7,22 @@
     z-index: 100;
     width: 100%;
     height: 100%;
-  
+
     padding: 48px 40px;
-  
+
     transition: opacity var(--animation), visibility var(--animation);
-  
+
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
-    
+
   .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
   }
-  
+
   .mobile-menu__container {
     position: relative;
     display: flex;
@@ -30,7 +30,7 @@
     justify-content: space-between;
     height: 100%;
   }
-  
+
   .mobile-menu__button {
     position: absolute;
     top: -33px;
@@ -40,24 +40,24 @@
     padding: 0;
     line-height: 0;
     cursor: pointer;
-  
+
     transition: fill var(--animation);
-  
+
     &:hover,
     &:focus {
       fill: var(--secondary-font-color);
     }
   }
-  
+
   .mobile-menu__icon {
     width: 40px;
     height: 40px;
   }
-  
+
   .mobile-menu__items {
     margin-bottom: 32px;
   }
-  
+
   .mobile-menu__link {
     display: block;
     color: var(--third-font-color);
@@ -65,70 +65,69 @@
     font-size: 40px;
     line-height: 1.17;
     transition: color var(--animation);
-  
+
     &:hover,
     &:focus {
       color: var(--secondary-font-color);
     }
   }
-  
+
   .mobile-current {
     color: var(--secondary-font-color);
   }
-  
+
   .mobile-menu__email {
     display: block;
     color: var(--primary-font-color);
     font-weight: 500;
     font-size: 24px;
     line-height: 1.16;
-  
+
     margin-bottom: 64px;
 
     transition: color var(--animation);
-  
+
     &:hover,
     &:focus {
       color: var(--secondary-font-color);
     }
   }
-  
+
   .mobile-menu__phone {
     display: block;
     color: var(--secondary-font-color);
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
-  
+
     margin-bottom: 32px;
   }
-  
+
   .mobile-menu__social {
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .mobile-menu__network {
-    display: block;
+    display: flex;
     color: var(--secondary-font-color);
     font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-  
-    padding-left: 5px;
-    padding-right: 5px;
+    font-size: 14px;
+    line-height: 1.14;
+
+    padding-left: 2px;
+    padding-right: 2px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
-  
+
     &:last-child {
       border-right: none;
       padding-right: 0px;
     }
-  
+
     &:first-child {
       padding-left: 0%;
     }
   }
-  
 }
 
 @media screen and (min-width: 480px) {
@@ -138,10 +137,19 @@
 
   .mobile-menu__network {
     font-size: 18px;
+    line-height: 1.22;
 
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+    &:last-child {
+      border-right: none;
+      padding-right: 0px;
+    }
+
+    &:first-child {
+      padding-left: 0%;
+    }
   }
-
 }
-
