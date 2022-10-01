@@ -621,11 +621,6 @@ img {
     border-radius: 2px;
   }
   .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    row-gap: 10px;
-    margin-left: auto;
     margin-left: auto;
   }
   .contact__link {
@@ -634,9 +629,24 @@ img {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.16;
+    padding-top: 21px;
+    padding-bottom: 5px;
     transition: color var(--animation);
   }
   .contact__link:hover, .contact__link:focus {
+    color: var(--secondary-font-color);
+  }
+  .contact__link_tel {
+    display: flex;
+    color: var(--contact-color);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    padding-bottom: 21px;
+    padding-top: 5px;
+    transition: color var(--animation);
+  }
+  .contact__link_tel:hover, .contact__link_tel:focus {
     color: var(--secondary-font-color);
   }
   .contact__icon {
