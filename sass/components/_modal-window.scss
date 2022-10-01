@@ -5,9 +5,9 @@
 
   background-color: var(--primari-buckground-color);
   position: absolute;
-  top: 50%;
+  top: 15%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX( -50%);
 }
 
 .close-btn {
@@ -43,9 +43,25 @@
   }
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     min-height: 580px;
   }
 }
+
+
+
+
