@@ -617,7 +617,7 @@ img {
     background-color: var(--secondary-font-color);
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -3px;
     border-radius: 2px;
   }
   .contact {
